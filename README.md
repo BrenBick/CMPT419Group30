@@ -27,6 +27,7 @@ repository
 	    ├── Frustrated
 	    ├── Embarrassed
 	    ├── Confused
+	    ├── frames		## This is where the extracted images will be stored
 	├── load_data.ipynb		## This notebook extracts the image frames from the videos in the data folder
 	├── label.csv			## This contains the path and labels for every video clip in the dataset
 	├── image-model			   ## Directory for training the image sub-model
