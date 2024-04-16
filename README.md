@@ -22,25 +22,27 @@ pip3 install librosa
 ```bash
 repository
 ├── src                     ## source code of the package itself
-	├── data                ## Main directory for the video clip dataset
-    ├── Surprised     
-    ├── Frustrated
-    ├── Embarrassed
-    ├── Confused
-	├── image-model			   ## Main directory for training the image sub-model
+	├── data                ## Directory for the video clip training dataset
+	    ├── Surprised     
+	    ├── Frustrated
+	    ├── Embarrassed
+	    ├── Confused
+	├── load_data.ipynb		## This notebook extracts the image frames from the videos in the data folder
+	├── label.csv			## This contains the path and labels for every video clip in the dataset
+	├── image-model			   ## Directory for training the image sub-model
 	  ├── dataset
 	    ├── train           ## Training data directory for the image frames
-        ├── Surprised     
-        ├── Frustrated
-        ├── Embarrassed
-        ├── Confused
+	        ├── Surprised     
+	        ├── Frustrated
+	        ├── Embarrassed
+	        ├── Confused
 	    ├── test           ## Validation data directory for the image frames
-        ├── Surprised     
-        ├── Frustrated
-        ├── Embarrassed
-        ├── Confused
+	        ├── Surprised     
+	        ├── Frustrated
+	        ├── Embarrassed
+	        ├── Confused
 	  ├── runs             ## Statistics from training the image model
-	├── make-prediction    ## Main directory for making a prediction
+	├── make-prediction    ## Main directory for making a prediction THIS IS WHERE YOU CAN TEST
 	  ├── emoji_output.ipynb ## Notebook for making aprediction on a video
 	  ├── video.mp4         ## The video you want to predict for
 ├── README.md       			## You are here
